@@ -5,21 +5,19 @@
 
 from Astar1 import *
 
-
+from greedybf import *
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    path = a_start()
-
-    if path:
-        print("Path found")
-        print("Steps:", len(path) - 1)
-        print("Path:", path)
-
-        print_maze_with_path(path)
-    else:
-        print("No path found")
+    print("*************************")
+    print("******Breadth First Search**********")
+    print("*************************")
+    greedy_bfs_run()
+    print("*************************")
+    print("******A*ALGORITHM**********")
+    print("*************************")
+    a_star_search_run()
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
 

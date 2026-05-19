@@ -112,3 +112,15 @@ def print_maze_with_path(path):
         for row in maze_copy:
             print("".join(row))
 # Run A star search
+
+def a_star_search_run():
+    path = a_start()
+
+    if path:
+        print("Path found")
+        print("Steps:", len(path) - 1)
+        print("Path:", path)
+
+        print_maze_with_path(path)
+    else:
+        print("No path found")
